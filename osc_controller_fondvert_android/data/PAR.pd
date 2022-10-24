@@ -1,0 +1,49 @@
+#N canvas 225 1 935 943 12;
+#X obj 4 6 cnv 16 900 1200 empty empty empty 20 12 0 14 -128992 -66577
+0;
+#X obj 9 6 cnv 15 1190 40 empty empty PLACE_NOTHING_HERE 20 12 0 14
+-261682 -66577 0;
+#X obj 18 607 cnv 15 230 230 empty color color_rgbw1 20 12 0 14 -4034
+-66577 0;
+#X text 255 79 ------------------ PAR Warm White avant ------------------
+;
+#X obj 287 609 vsl 50 230 0 255 0 0 empty empty dimmer_rgbw1 0 -9 0
+10 -262144 -1 -1 0 1;
+#X text 255 418 ------------------ PAR RGBW milieu ------------------
+;
+#X text 52 562 --------- Milieu gauche ---------;
+#X text 525 559 --------- Milieu droite ---------;
+#X obj 40 227 hsl 350 50 0 255 0 0 empty empty dimmer_ww1 -2 -8 0 16
+-262144 -1 -1 0 1;
+#X obj 517 227 hsl 350 50 0 255 0 0 empty empty dimmer_ww2 -2 -8 0
+16 -262144 -1 -1 0 1;
+#X obj 40 315 hsl 350 50 0 255 0 0 empty empty dimmer_ww3 -2 -8 0 16
+-262144 -1 -1 0 1;
+#X obj 516 315 hsl 350 50 0 255 0 0 empty empty dimmer_ww4 -2 -8 0
+16 -262144 -1 -1 0 1;
+#X obj 206 135 hsl 500 50 0 255 0 0 empty empty master_ww -2 -8 0 16
+-262144 -1 -1 0 1;
+#X obj 207 464 hsl 500 50 0 255 0 0 empty empty master_rgbw -2 -8 0
+16 -262144 -1 -1 0 1;
+#X obj 367 609 vsl 50 230 0 255 0 0 empty empty white_rgbw1 0 -9 0
+10 -262144 -1 -1 0 1;
+#X obj 478 607 cnv 15 230 230 empty color color_rgbw2 20 12 0 14 -4034
+-66577 0;
+#X obj 747 609 vsl 50 230 0 255 0 0 empty empty dimmer_rgbw2 0 -9 0
+10 -262144 -1 -1 0 1;
+#X obj 827 609 vsl 50 230 0 255 0 0 empty empty white_rgbw2 0 -9 0
+10 -262144 -1 -1 0 1;
+#X obj 18 947 cnv 15 230 230 empty color color_rgbw3 20 12 0 14 -4034
+-66577 0;
+#X obj 287 949 vsl 50 230 0 255 0 0 empty empty dimmer_rgbw3 0 -9 0
+10 -262144 -1 -1 0 1;
+#X obj 367 949 vsl 50 230 0 255 0 0 empty empty white_rgbw3 0 -9 0
+10 -262144 -1 -1 0 1;
+#X obj 478 947 cnv 15 230 230 empty color color_rgbw4 20 12 0 14 -4034
+-66577 0;
+#X obj 747 949 vsl 50 230 0 255 0 0 empty empty dimmer_rgbw4 0 -9 0
+10 -262144 -1 -1 0 1;
+#X obj 827 949 vsl 50 230 0 255 0 0 empty empty white_rgbw4 0 -9 0
+10 -262144 -1 -1 0 1;
+#X text 52 902 --------- Arrière gauche ---------;
+#X text 525 899 --------- Arrière droite ---------;
