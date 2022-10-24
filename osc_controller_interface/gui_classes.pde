@@ -325,7 +325,7 @@ class Pad extends Controller {
   float py = 0;
 
   Pad(float xpos, float ypos, float w, float h, String label, float min, float max) {
-    super( xpos, ypos, label);
+    super(xpos, ypos, label);
     this.min = min;
     this.max = max;
     this.w = w;
