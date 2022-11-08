@@ -1,6 +1,6 @@
 # SalleFondVert_Controller
 
-**Ou comment utiliser plus ou moins en autonomie le controleur light de la salle fond vert qui fait tablette(OSC) > ordinateur (Chataigne) > lights (DMX).**
+**Ou comment utiliser plus ou moins en autonomie le controleur light de la salle fond vert qui fait tablette (OSC) > ordinateur (Chataigne) > lights (DMX).**
 
 <!-- Le patch sur Chataigne : modifier les variables dans Chataigne pour les renvoyer en OSC ? et notamment pouvoir rallumer après un blackout ?
 Blackout c'est un toggle ?
@@ -56,6 +56,8 @@ Les presets :
 ![Plan de fire'](./images/screen6.jpg)
 
 ### B. Mise en route
+
+Ouvrir l'application `osc_controller_fondvert_android` sur la tablette.
 
 Allumer l'ordinateur, ouvrir le patch Chataigne, et vérifier la connexion de la tablette à Chataigne.
 
