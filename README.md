@@ -14,9 +14,9 @@ Faire une explication de l'interface et de ce qui controle quoi,  + photo
 
 ## Utilisation de la tablette de contrôle lumière
 
-### Interface
+### A. Interface
 
-Les réglages :
+Les réglages de connexion :
 
 - Le bouton `Scan` cherche les clients OSC (qui envoit le message /id), 
 - Le bouton `Connect` se connecte quand on trouve un client,
@@ -55,7 +55,7 @@ Les presets :
 
 ![Plan de fire'](./images/screen6.jpg)
 
-### Mise en route
+### B. Mise en route
 
 Allumer l'ordinateur, ouvrir le patch Chataigne, et vérifier la connexion de la tablette à Chataigne.
 
@@ -69,3 +69,32 @@ On peux aussi vérifier qu'on reçoit bien des messages OSC dans la partie Logge
 
 ![Plan de fire'](./images/screen8.png)
 
+## Utilisation de l'interface desktop
+
+### A. Interface
+
+Même principe que pour l'interface tablette.
+
+Une première interface avec les réglages de connexion :
+
+![Plan de fire'](./images/screen9.png)
+
+Une seconde interface avec les contrôles de 6 lyres :
+
+![Plan de fire'](./images/screen10.png)
+
+Une dernière interface avec les controles des 8 PAR, les 4 WW qui éclairent le fond vert et les 4 RGBW du milieu, ainsi que les presets :
+
+![Plan de fire'](./images/screen11.png)
+
+### B. Mise en route
+
+Ouvrir le programme Processing `osc_controller_interface`, ainsi que le patch Chataigne.
+
+Pas besoin de se poser des questions de réseau wifi étant donné que Chataigne et Processing communiquent directement en local en OSC.
+
+Il n'y a normalement pas besoin de modifier les paramètres OSC dans Chataigne, qui sont en adéquation avec ceux écrit dans le code Processing.
+
+On peux vérifier qu'on reçoit bien des messages OSC dans la partie Logger en bas à droite de l'interface Chataigne. Ici on reçoit le message /id du bouton `Scan` de la première interface.
+
+![Plan de fire'](./images/screen8.png)
