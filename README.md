@@ -101,6 +101,6 @@ On peux vérifier qu'on reçoit bien des messages OSC dans la partie Logger en b
 
 ![Plan de fire'](./images/screen8.png)
 
-## Pour aller plus loin
+## Pour aller + loin
 
 Le [tuto introduction à Chataigne](https://github.com/LucieMrc/Chataigne_2spi).

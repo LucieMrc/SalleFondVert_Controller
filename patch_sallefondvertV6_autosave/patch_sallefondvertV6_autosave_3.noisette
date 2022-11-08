@@ -1111,8 +1111,8 @@
             },
             {
               "value": [
-                155.0035705566406,
-                119.6109313964844
+                86.36000061035156,
+                91.947998046875
               ],
               "controlAddress": "/_pan_tilt_l3",
               "type": "Point2D",
@@ -1170,7 +1170,7 @@
               "shortName": "_pan_tilt_l6"
             },
             {
-              "value": 2.0,
+              "value": 1.0,
               "controlAddress": "/_tabs",
               "type": "Float",
               "niceName": "/tabs",
@@ -2279,7 +2279,7 @@
             {
               "parameters": [
                 {
-                  "value": 155.0035705566406,
+                  "value": 86.36000061035156,
                   "controlAddress": "/pan",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -2297,7 +2297,7 @@
             {
               "parameters": [
                 {
-                  "value": 155.0035705566406,
+                  "value": 86.36000061035156,
                   "controlAddress": "/tilt",
                   "feedbackOnly": false,
                   "type": "Float",
