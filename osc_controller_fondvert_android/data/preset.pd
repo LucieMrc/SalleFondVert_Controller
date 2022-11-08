@@ -11,6 +11,6 @@
 #X text 569 122 --------- Green screen ---------;
 #X obj 101 549 bng 200 50 50 0 empty empty warm 0 -10 0 10 -262144
 -1 -1;
-#X text 98 486 --------- Back ligts ---------;
 #X obj 100 757 bng 200 50 50 0 empty empty cold 0 -10 0 10 -262144
 -1 -1;
+#X text 98 486 --------- Back lights ---------;
