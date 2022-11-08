@@ -100,3 +100,7 @@ Il n'y a normalement pas besoin de modifier les paramètres OSC dans Chataigne, 
 On peux vérifier qu'on reçoit bien des messages OSC dans la partie Logger en bas à droite de l'interface Chataigne. Ici on reçoit le message /id du bouton `Scan` de la première interface.
 
 ![Plan de fire'](./images/screen8.png)
+
+## Pour aller plus loin
+
+Le [tuto introduction à Chataigne](https://github.com/LucieMrc/Chataigne_2spi).
