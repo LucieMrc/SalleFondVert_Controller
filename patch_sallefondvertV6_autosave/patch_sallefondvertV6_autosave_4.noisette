@@ -1,7 +1,7 @@
 {
   "metaData": {
-    "version": "1.9.8",
-    "versionNumber": 67848
+    "version": "1.9.9",
+    "versionNumber": 67849
   },
   "projectSettings": {
     "containers": {
@@ -53,6 +53,10 @@
                     300.0
                   ],
                   "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/customVariables/lyreTopGauche",
+                  "controlAddress": "/target"
                 }
               ],
               "niceName": "Item 1",
@@ -76,6 +80,10 @@
                     300.0
                   ],
                   "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/customVariables/lyreTopDroite",
+                  "controlAddress": "/target"
                 }
               ],
               "niceName": "Item",
@@ -99,6 +107,10 @@
                     300.0
                   ],
                   "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/customVariables/lyreMilieuGauche",
+                  "controlAddress": "/target"
                 }
               ],
               "niceName": "Item 2",
@@ -122,6 +134,10 @@
                     300.0
                   ],
                   "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/customVariables/lyreMilieuDroite",
+                  "controlAddress": "/target"
                 }
               ],
               "niceName": "Item 3",
@@ -145,6 +161,10 @@
                     300.0
                   ],
                   "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/customVariables/lyreBasGauche",
+                  "controlAddress": "/target"
                 }
               ],
               "niceName": "Item 4",
@@ -168,6 +188,10 @@
                     300.0
                   ],
                   "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/customVariables/lyreBasDroite",
+                  "controlAddress": "/target"
                 }
               ],
               "niceName": "Item 5",
@@ -191,6 +215,10 @@
                     251.0
                   ],
                   "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/customVariables/rgbwAvantGauche",
+                  "controlAddress": "/target"
                 }
               ],
               "niceName": "Item 6",
@@ -214,6 +242,10 @@
                     241.0
                   ],
                   "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/customVariables/rgbwArriereGauche",
+                  "controlAddress": "/target"
                 }
               ],
               "niceName": "Item 8",
@@ -237,6 +269,10 @@
                     240.0
                   ],
                   "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/customVariables/rgbwArriereDroite",
+                  "controlAddress": "/target"
                 }
               ],
               "niceName": "Item 7",
@@ -260,6 +296,10 @@
                     245.3773803710938
                   ],
                   "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/customVariables/rgbwAvantDroite",
+                  "controlAddress": "/target"
                 }
               ],
               "niceName": "Item 9",
@@ -283,6 +323,10 @@
                     133.0
                   ],
                   "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/customVariables/face1",
+                  "controlAddress": "/target"
                 }
               ],
               "niceName": "Item 10",
@@ -306,6 +350,10 @@
                     129.0
                   ],
                   "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/customVariables/face2",
+                  "controlAddress": "/target"
                 }
               ],
               "niceName": "Item 11",
@@ -329,6 +377,10 @@
                     127.0
                   ],
                   "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/customVariables/face3",
+                  "controlAddress": "/target"
                 }
               ],
               "niceName": "Item 12",
@@ -352,6 +404,10 @@
                     136.0
                   ],
                   "controlAddress": "/viewUISize"
+                },
+                {
+                  "value": "/customVariables/face4",
+                  "controlAddress": "/target"
                 }
               ],
               "niceName": "Item 13",
@@ -399,19 +455,19 @@
             {
               "type": 1,
               "width": 1680,
-              "height": 550,
+              "height": 786,
               "direction": 1,
               "shifters": [
                 {
                   "type": 1,
                   "width": 249,
-                  "height": 550,
+                  "height": 786,
                   "direction": 2,
                   "shifters": [
                     {
                       "type": 0,
                       "width": 249,
-                      "height": 284,
+                      "height": 402,
                       "currentContent": "Modules",
                       "tabs": [
                         {
@@ -422,7 +478,7 @@
                     {
                       "type": 0,
                       "width": 249,
-                      "height": 260,
+                      "height": 378,
                       "currentContent": "Custom Variables",
                       "tabs": [
                         {
@@ -434,8 +490,8 @@
                 },
                 {
                   "type": 0,
-                  "width": 944,
-                  "height": 550,
+                  "width": 844,
+                  "height": 786,
                   "currentContent": "State Machine",
                   "tabs": [
                     {
@@ -451,8 +507,8 @@
                 },
                 {
                   "type": 0,
-                  "width": 475,
-                  "height": 550,
+                  "width": 575,
+                  "height": 786,
                   "currentContent": "Inspector",
                   "tabs": [
                     {
@@ -465,13 +521,13 @@
             {
               "type": 1,
               "width": 1680,
-              "height": 364,
+              "height": 128,
               "direction": 1,
               "shifters": [
                 {
                   "type": 0,
                   "width": 178,
-                  "height": 364,
+                  "height": 128,
                   "currentContent": "Sequences",
                   "tabs": [
                     {
@@ -482,7 +538,7 @@
                 {
                   "type": 0,
                   "width": 1016,
-                  "height": 364,
+                  "height": 128,
                   "currentContent": "Sequence Editor",
                   "tabs": [
                     {
@@ -493,7 +549,7 @@
                 {
                   "type": 0,
                   "width": 474,
-                  "height": 364,
+                  "height": 128,
                   "currentContent": "Logger",
                   "tabs": [
                     {
@@ -700,9 +756,9 @@
             },
             {
               "value": [
-                0.003921568859368563,
+                0.7372549176216125,
                 0.0,
-                0.0,
+                0.1019607856869698,
                 1.0
               ],
               "controlAddress": "/_color_l1",
@@ -717,9 +773,9 @@
             },
             {
               "value": [
-                0.003921568859368563,
+                0.7254902124404907,
                 0.0,
-                0.0,
+                0.08235294371843338,
                 1.0
               ],
               "controlAddress": "/_color_l2",
@@ -734,9 +790,9 @@
             },
             {
               "value": [
-                0.003921568859368563,
-                0.0,
-                0.0,
+                0.8941176533699036,
+                1.0,
+                0.7372549176216125,
                 1.0
               ],
               "controlAddress": "/_color_l3",
@@ -751,7 +807,7 @@
             },
             {
               "value": [
-                0.003921568859368563,
+                1.0,
                 0.0,
                 0.0,
                 1.0
@@ -768,7 +824,7 @@
             },
             {
               "value": [
-                0.003921568859368563,
+                1.0,
                 0.0,
                 0.0,
                 1.0
@@ -785,9 +841,9 @@
             },
             {
               "value": [
-                0.003921568859368563,
-                0.0,
-                0.0,
+                1.0,
+                0.6313725709915161,
+                0.4627451002597809,
                 1.0
               ],
               "controlAddress": "/_color_l6",
@@ -802,9 +858,9 @@
             },
             {
               "value": [
-                0.003921568859368563,
-                0.0,
-                0.0,
+                1.0,
+                1.0,
+                1.0,
                 1.0
               ],
               "controlAddress": "/_color_rgbw1",
@@ -819,8 +875,8 @@
             },
             {
               "value": [
-                0.003921568859368563,
-                0.0,
+                0.9686274528503418,
+                1.0,
                 0.0,
                 1.0
               ],
@@ -836,7 +892,7 @@
             },
             {
               "value": [
-                0.003921568859368563,
+                1.0,
                 0.0,
                 0.0,
                 1.0
@@ -853,9 +909,9 @@
             },
             {
               "value": [
-                0.003921568859368563,
-                0.0,
-                0.0,
+                0.1921568661928177,
+                1.0,
+                0.364705890417099,
                 1.0
               ],
               "controlAddress": "/_color_rgbw4",
@@ -986,7 +1042,7 @@
               "shortName": "_dimmer_rgbw4"
             },
             {
-              "value": 255.0,
+              "value": 120.0,
               "controlAddress": "/_dimmer_ww1",
               "type": "Float",
               "niceName": "/dimmer_ww1",
@@ -1111,8 +1167,8 @@
             },
             {
               "value": [
-                86.36000061035156,
-                91.947998046875
+                155.0035705566406,
+                119.6109313964844
               ],
               "controlAddress": "/_pan_tilt_l3",
               "type": "Point2D",
@@ -1170,7 +1226,7 @@
               "shortName": "_pan_tilt_l6"
             },
             {
-              "value": 1.0,
+              "value": 3.0,
               "controlAddress": "/_tabs",
               "type": "Float",
               "niceName": "/tabs",
@@ -1383,6 +1439,264 @@
               "shortName": "_zoom_l6"
             }
           ]
+        }
+      },
+      {
+        "niceName": "MIDI",
+        "type": "MIDI",
+        "scripts": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "params": {
+          "parameters": [
+            {
+              "value": [
+                "-382630700",
+                ""
+              ],
+              "controlAddress": "/devices"
+            }
+          ],
+          "containers": {
+            "pass_through": {
+            }
+          }
+        },
+        "templates": {
+          "viewOffset": [
+            0,
+            0
+          ],
+          "viewZoom": 1.0
+        },
+        "values": {
+          "parameters": [
+            {
+              "value": 0,
+              "minValue": 0,
+              "maxValue": 127,
+              "default": 0,
+              "hexMode": false,
+              "channel": 1,
+              "pitchOrNumber": 19,
+              "MIDIType": 2,
+              "controlAddress": "/_1_CC19",
+              "type": "MIDI Value",
+              "niceName": "[1] CC19",
+              "customizable": false,
+              "removable": true,
+              "description": "Channel 1 : CC19",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "minValue": 0,
+              "maxValue": 127,
+              "default": 0,
+              "hexMode": false,
+              "channel": 1,
+              "pitchOrNumber": 20,
+              "MIDIType": 2,
+              "controlAddress": "/_1_CC20",
+              "type": "MIDI Value",
+              "niceName": "[1] CC20",
+              "customizable": false,
+              "removable": true,
+              "description": "Channel 1 : CC20",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": 0,
+              "minValue": 0,
+              "maxValue": 127,
+              "default": 0,
+              "hexMode": false,
+              "channel": 1,
+              "pitchOrNumber": 22,
+              "MIDIType": 2,
+              "controlAddress": "/_1_CC22",
+              "type": "MIDI Value",
+              "niceName": "[1] CC22",
+              "customizable": false,
+              "removable": true,
+              "description": "Channel 1 : CC22",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": 0,
+              "minValue": 0,
+              "maxValue": 127,
+              "default": 0,
+              "hexMode": false,
+              "channel": 1,
+              "pitchOrNumber": 23,
+              "MIDIType": 2,
+              "controlAddress": "/_1_CC23",
+              "type": "MIDI Value",
+              "niceName": "[1] CC23",
+              "customizable": false,
+              "removable": true,
+              "description": "Channel 1 : CC23",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": 0,
+              "minValue": 0,
+              "maxValue": 127,
+              "default": 0,
+              "hexMode": false,
+              "channel": 1,
+              "pitchOrNumber": 25,
+              "MIDIType": 2,
+              "controlAddress": "/_1_CC25",
+              "type": "MIDI Value",
+              "niceName": "[1] CC25",
+              "customizable": false,
+              "removable": true,
+              "description": "Channel 1 : CC25",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": 0,
+              "minValue": 0,
+              "maxValue": 127,
+              "default": 0,
+              "hexMode": false,
+              "channel": 1,
+              "pitchOrNumber": 27,
+              "MIDIType": 2,
+              "controlAddress": "/_1_CC27",
+              "type": "MIDI Value",
+              "niceName": "[1] CC27",
+              "customizable": false,
+              "removable": true,
+              "description": "Channel 1 : CC27",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": 0,
+              "minValue": 0,
+              "maxValue": 127,
+              "default": 0,
+              "hexMode": false,
+              "channel": 1,
+              "pitchOrNumber": 31,
+              "MIDIType": 2,
+              "controlAddress": "/_1_CC31",
+              "type": "MIDI Value",
+              "niceName": "[1] CC31",
+              "customizable": false,
+              "removable": true,
+              "description": "Channel 1 : CC31",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": 0,
+              "minValue": 0,
+              "maxValue": 127,
+              "default": 0,
+              "hexMode": false,
+              "channel": 1,
+              "pitchOrNumber": 49,
+              "MIDIType": 2,
+              "controlAddress": "/_1_CC49",
+              "type": "MIDI Value",
+              "niceName": "[1] CC49",
+              "customizable": false,
+              "removable": true,
+              "description": "Channel 1 : CC49",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": 0,
+              "minValue": 0,
+              "maxValue": 127,
+              "default": 0,
+              "hexMode": false,
+              "channel": 1,
+              "pitchOrNumber": 53,
+              "MIDIType": 2,
+              "controlAddress": "/_1_CC53",
+              "type": "MIDI Value",
+              "niceName": "[1] CC53",
+              "customizable": false,
+              "removable": true,
+              "description": "Channel 1 : CC53",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": 0,
+              "minValue": 0,
+              "maxValue": 127,
+              "default": 0,
+              "hexMode": false,
+              "channel": 1,
+              "pitchOrNumber": 57,
+              "MIDIType": 2,
+              "controlAddress": "/_1_CC57",
+              "type": "MIDI Value",
+              "niceName": "[1] CC57",
+              "customizable": false,
+              "removable": true,
+              "description": "Channel 1 : CC57",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": 0,
+              "minValue": 0,
+              "maxValue": 127,
+              "default": 0,
+              "hexMode": false,
+              "channel": 1,
+              "pitchOrNumber": 61,
+              "MIDIType": 2,
+              "controlAddress": "/_1_CC61",
+              "type": "MIDI Value",
+              "niceName": "[1] CC61",
+              "customizable": false,
+              "removable": true,
+              "description": "Channel 1 : CC61",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": 0,
+              "minValue": 0,
+              "maxValue": 127,
+              "default": 0,
+              "hexMode": false,
+              "channel": 1,
+              "pitchOrNumber": 62,
+              "MIDIType": 2,
+              "controlAddress": "/_1_CC62",
+              "type": "MIDI Value",
+              "niceName": "[1] CC62",
+              "customizable": false,
+              "removable": true,
+              "description": "Channel 1 : CC62",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            }
+          ],
+          "containers": {
+            "tempo": {
+            },
+            "mtc": {
+            }
+          }
         }
       }
     ],
@@ -1862,7 +2176,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.003921568859368563,
+                  "value": 234.2015686035156,
                   "controlAddress": "/red",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -2026,7 +2340,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.003921568859368563,
+                  "value": 0.7254902124404907,
                   "controlAddress": "/red",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -2191,7 +2505,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.003921568859368563,
+                  "value": 0.8941176533699036,
                   "controlAddress": "/red",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -2279,7 +2593,7 @@
             {
               "parameters": [
                 {
-                  "value": 86.36000061035156,
+                  "value": 155.0035705566406,
                   "controlAddress": "/pan",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -2297,7 +2611,7 @@
             {
               "parameters": [
                 {
-                  "value": 86.36000061035156,
+                  "value": 155.0035705566406,
                   "controlAddress": "/tilt",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -2356,7 +2670,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.003921568859368563,
+                  "value": 1.0,
                   "controlAddress": "/red",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -2521,7 +2835,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.003921568859368563,
+                  "value": 1.0,
                   "controlAddress": "/red",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -2686,7 +3000,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.003921568859368563,
+                  "value": 1.0,
                   "controlAddress": "/red",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -7982,6 +8296,16 @@
                   {
                     "parameters": [
                       {
+                        "value": "/modules/midi/values/_1_CC19",
+                        "controlAddress": "/inputValue"
+                      }
+                    ],
+                    "niceName": "Input Value 1",
+                    "type": "Input Value"
+                  },
+                  {
+                    "parameters": [
+                      {
                         "value": "/modules/osc/values/_dimmer_ww1",
                         "controlAddress": "/inputValue"
                       }
@@ -8007,6 +8331,36 @@
                 "editorIsCollapsed": true
               },
               "filters": {
+                "items": [
+                  {
+                    "niceName": "Remap",
+                    "type": "Remap",
+                    "filterParams": {
+                      "parameters": [
+                        {
+                          "value": true,
+                          "controlAddress": "/useCustomInputRange"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            127.0
+                          ],
+                          "controlAddress": "/inputMin_Max"
+                        },
+                        {
+                          "value": [
+                            0.0,
+                            255.0
+                          ],
+                          "controlAddress": "/targetMin_Max"
+                        }
+                      ],
+                      "paramLinks": {
+                      }
+                    }
+                  }
+                ],
                 "viewOffset": [
                   0,
                   0
@@ -8027,6 +8381,10 @@
                           "value": 51,
                           "hexMode": false,
                           "controlAddress": "/channel"
+                        },
+                        {
+                          "value": false,
+                          "controlAddress": "/remapTo0_255"
                         }
                       ],
                       "paramLinks": {
@@ -9040,8 +9398,8 @@
       }
     ],
     "viewOffset": [
-      93,
-      -180
+      22,
+      821
     ],
     "viewZoom": 1.0,
     "transitions": {
@@ -9055,8 +9413,8 @@
     "comments": {
       "hideInEditor": true,
       "viewOffset": [
-        93,
-        -180
+        22,
+        821
       ],
       "viewZoom": 1.0
     }

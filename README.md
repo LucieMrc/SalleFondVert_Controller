@@ -101,6 +101,61 @@ On peux vérifier qu'on reçoit bien des messages OSC dans la partie Logger en b
 
 ![Plan de fire'](./images/screen8.png)
 
+## Créer une automation de contrôle dans Chataigne
+
+## Le midi-learn dans Chataigne
+
+Pour contrôler certains paramètres avec un controleur MIDI, en faisant automatiquement l'attribution de la valeur midi au paramètre à modifier.
+
+### La mise en place
+
+J'utilise ici un Midimix, avec 24 potards, 9 sliders et 20 boutons.
+
+Pour utiliser un controleur midi, on ajoute un module MIDI dans la partie Modules à gauche de l'interface de Madmapper.
+
+![Plan de fire'](./images/screen12.png)
+
+Dans l'inspecteur du module, on peux alors choisir notre controleur midi.
+
+![Plan de fire'](./images/screen13.png)
+
+Lorsque que `Auto Add` est coché, et `Is Connected` est activé, on voit les valeurs changer en temps réel dans la partie Values de l'inspecteur.
+
+![Plan de fire'](./images/screen14.png)
+
+### Ajouter le contrôle
+
+Pour assigner une valeur midi à un channel DMX/paramètre, il suffit de cliquer sur le mapping du paramètre. Ici, le dimmmer du projecteur PAR WW face :
+
+![Plan de fire'](./images/screen15.png)
+
+Dans la partie Inputs de l'inspecteur, on a déjà l'input d'OSC qui récupère les valeurs de l'interface Processing.
+
+Il suffit de créer un nouvel input en cliquant sur le bouton ➕ en haut à droite de la partie Inputs.
+
+![Plan de fire'](./images/screen16.png)
+
+En cliquant sur le carré `Learn` à droite puis en touchant le controleur midi pour modifier une valeur, la valeur midi s'attribue automatiquement à la valeur du mapping et donc du paramètre (ici la valeur de CC19).
+
+![Plan de fire'](./images/screen17.png)
+
+Néanmoins, le controleur midi envoit des valeurs de 0 à 127, et le DMX reçoit des valeurs de 0 à 255. 
+
+<!--Si on ne remapppe pas la valeur reçue en midi pour qu'elle aille de 0 à 255, -->
+
+Il faut donc remapper les valeurs de l'input pour qu'elle sorte en output en allant de 0 à 255.
+Pour cela, on ajoute un filtre en cliquant sur le bouton ➕ de la partie Filters, Remap > Remap.
+
+![Plan de fire'](./images/screen18.png)
+
+On assigne la plage d'entrée allant de 0 à 127 et la plage de sortie allant de 0 à 255.
+
+![Plan de fire'](./images/screen19.png)
+
+Attention, en ajoutant le contrôle MIDI en input par dessus le contrôle OSC, le contrôle MIDI prend la priorité et la modification de la valeur OSC ne changera plus le paramètre en sortie.
+
+De la même façon, le fait d'ajouter un filtre de remappage va modifier la valeur OSC si on veux l'utiliser, étant donné qu'elle arrive déjà en 0 à 255. On peux désactiver le filtre en cliquant sur le bouton éteindre rouge en haut à droite de la partie `Filters`.
+
 ## Pour aller + loin
 
 Le [tuto introduction à Chataigne](https://github.com/LucieMrc/Chataigne_2spi).
