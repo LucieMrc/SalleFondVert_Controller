@@ -1455,7 +1455,7 @@
           "parameters": [
             {
               "value": [
-                "-382630700",
+                "",
                 ""
               ],
               "controlAddress": "/devices"
@@ -1476,7 +1476,7 @@
         "values": {
           "parameters": [
             {
-              "value": 71,
+              "value": 0,
               "minValue": 0,
               "maxValue": 127,
               "default": 0,
@@ -1494,7 +1494,24 @@
               "feedbackOnly": false
             },
             {
-              "value": 40,
+              "minValue": 0,
+              "maxValue": 127,
+              "default": 0,
+              "hexMode": false,
+              "channel": 1,
+              "pitchOrNumber": 20,
+              "MIDIType": 2,
+              "controlAddress": "/_1_CC20",
+              "type": "MIDI Value",
+              "niceName": "[1] CC20",
+              "customizable": false,
+              "removable": true,
+              "description": "Channel 1 : CC20",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": 0,
               "minValue": 0,
               "maxValue": 127,
               "default": 0,
@@ -1512,7 +1529,7 @@
               "feedbackOnly": false
             },
             {
-              "value": 0,
+              "value": 18,
               "minValue": 0,
               "maxValue": 127,
               "default": 0,
@@ -1530,7 +1547,7 @@
               "feedbackOnly": false
             },
             {
-              "value": 15,
+              "value": 0,
               "minValue": 0,
               "maxValue": 127,
               "default": 0,
@@ -1548,7 +1565,7 @@
               "feedbackOnly": false
             },
             {
-              "value": 0,
+              "value": 33,
               "minValue": 0,
               "maxValue": 127,
               "default": 0,
@@ -1566,7 +1583,7 @@
               "feedbackOnly": false
             },
             {
-              "value": 17,
+              "value": 43,
               "minValue": 0,
               "maxValue": 127,
               "default": 0,
@@ -1584,7 +1601,7 @@
               "feedbackOnly": false
             },
             {
-              "value": 51,
+              "value": 60,
               "minValue": 0,
               "maxValue": 127,
               "default": 0,
@@ -1602,7 +1619,7 @@
               "feedbackOnly": false
             },
             {
-              "value": 0,
+              "value": 75,
               "minValue": 0,
               "maxValue": 127,
               "default": 0,
@@ -1620,7 +1637,7 @@
               "feedbackOnly": false
             },
             {
-              "value": 32,
+              "value": 93,
               "minValue": 0,
               "maxValue": 127,
               "default": 0,
@@ -1638,7 +1655,7 @@
               "feedbackOnly": false
             },
             {
-              "value": 126,
+              "value": 106,
               "minValue": 0,
               "maxValue": 127,
               "default": 0,
@@ -1652,6 +1669,24 @@
               "customizable": false,
               "removable": true,
               "description": "Channel 1 : CC61",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
+            {
+              "value": 127,
+              "minValue": 0,
+              "maxValue": 127,
+              "default": 0,
+              "hexMode": false,
+              "channel": 1,
+              "pitchOrNumber": 62,
+              "MIDIType": 2,
+              "controlAddress": "/_1_CC62",
+              "type": "MIDI Value",
+              "niceName": "[1] CC62",
+              "customizable": false,
+              "removable": true,
+              "description": "Channel 1 : CC62",
               "hideInEditor": false,
               "feedbackOnly": false
             }
