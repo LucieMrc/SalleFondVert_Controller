@@ -12,6 +12,8 @@ Faire une explication de l'interface et de ce qui controle quoi,  + photo
 
 ![Plan de fire'](./images/planFeu.png)
 
+Le patch DMX complet de l'installation actuelle de la salle fond vert, avec l'adresse DMX de chaque paramètre de chaque fixture, se trouve dans le pdf `Patch complet salle fond vert`.
+
 ## Utilisation de la tablette de contrôle lumière
 
 ### A. Interface
