@@ -1,0 +1,11 @@
+#N canvas 948 212 1680 937 12;
+#X obj 4 6 cnv 15 1850 900 empty empty empty 20 12 0 14 -128992 -66577
+0;
+#X obj 43 150 nbx 5 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-262144 -1 -1 0 256;
+#X floatatom 45 111 5 0 0 0 - - -;
+#X msg 45 64;
+#X msg 190 63 coucou;
+#X floatatom 191 103 5 0 0 0 avec_texte - -;
+#X obj 191 151 nbx 5 14 -1e+37 1e+37 0 0 empty empty avec_text 0 -8
+0 10 -262144 -1 -1 0 256;

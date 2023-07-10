@@ -1,0 +1,6 @@
+0   Chataigne                           0x0000000103236c40 _ZN4juce11SystemStats17getStackBacktraceEv + 64
+1   Chataigne                           0x00000001036b46b1 _ZN17CrashDumpUploader11handleCrashEi + 4289
+2   Chataigne                           0x0000000103236d1c _ZN4juceL11handleCrashEi + 12
+3   libsystem_platform.dylib            0x00007ff81267fc1d _sigtramp + 29
+4   ???                                 0xaaaaaaaaaaaaaaaa 0x0 + 12297829382473034410
+5   ???                                 0x4129c000411bc000 0x0 + 4695495193835323392

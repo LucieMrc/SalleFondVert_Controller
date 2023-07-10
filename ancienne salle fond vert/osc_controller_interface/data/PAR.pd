@@ -1,0 +1,60 @@
+#N canvas 0 7 1680 937 12;
+#X obj 4 6 cnv 15 1850 900 empty empty empty 20 12 0 14 -128992 -66577
+0;
+#X obj 9 11 cnv 15 1840 40 empty empty PLACE_NOTHING_HERE 20 12 0 14
+-261682 -66577 0;
+#X obj 960 291 cnv 15 230 230 empty color color_rgbw1 20 12 0 14 -4034
+-66577 0;
+#X text 255 79 ------------------ PAR Warm White avant ------------------
+;
+#X obj 1229 293 vsl 50 230 0 255 0 0 empty empty dimmer_rgbw1 0 -9
+0 10 -262144 -1 -1 0 1;
+#X text 1199 82 ------------------ PAR RGBW milieu ------------------
+;
+#X text 994 246 --------- Milieu gauche ---------;
+#X text 1467 243 --------- Milieu droite ---------;
+#X obj 70 227 hsl 350 50 0 255 0 0 empty empty dimmer_ww1 -2 -8 0 16
+-262144 -1 -1 0 1;
+#X obj 477 227 hsl 350 50 0 255 0 0 empty empty dimmer_ww2 -2 -8 0
+16 -262144 -1 -1 0 1;
+#X obj 70 315 hsl 350 50 0 255 0 0 empty empty dimmer_ww3 -2 -8 0 16
+-262144 -1 -1 0 1;
+#X obj 476 315 hsl 350 50 0 255 0 0 empty empty dimmer_ww4 -2 -8 0
+16 -262144 -1 -1 0 1;
+#X obj 206 135 hsl 500 50 0 255 0 0 empty empty master_ww -2 -8 0 16
+-262144 -1 -1 0 1;
+#X obj 1151 128 hsl 500 50 0 255 0 0 empty empty master_rgbw -2 -8
+0 16 -262144 -1 -1 0 1;
+#X obj 1309 293 vsl 50 230 0 255 0 0 empty empty white_rgbw1 0 -9 0
+10 -262144 -1 -1 0 1;
+#X obj 1420 291 cnv 15 230 230 empty color color_rgbw2 20 12 0 14 -4034
+-66577 0;
+#X obj 1689 293 vsl 50 230 0 255 0 0 empty empty dimmer_rgbw2 0 -9
+0 10 -262144 -1 -1 0 1;
+#X obj 1769 293 vsl 50 230 0 255 0 0 empty empty white_rgbw2 0 -9 0
+10 -262144 -1 -1 0 1;
+#X obj 960 631 cnv 15 230 230 empty color color_rgbw3 20 12 0 14 -4034
+-66577 0;
+#X obj 1229 633 vsl 50 230 0 255 0 0 empty empty dimmer_rgbw3 0 -9
+0 10 -262144 -1 -1 0 1;
+#X obj 1309 633 vsl 50 230 0 255 0 0 empty empty white_rgbw3 0 -9 0
+10 -262144 -1 -1 0 1;
+#X obj 1420 631 cnv 15 230 230 empty color color_rgbw4 20 12 0 14 -4034
+-66577 0;
+#X obj 1689 633 vsl 50 230 0 255 0 0 empty empty dimmer_rgbw4 0 -9
+0 10 -262144 -1 -1 0 1;
+#X obj 1769 633 vsl 50 230 0 255 0 0 empty empty white_rgbw4 0 -9 0
+10 -262144 -1 -1 0 1;
+#X text 994 586 --------- Arrière gauche ---------;
+#X text 1467 583 --------- Arrière droite ---------;
+#X obj 71 518 bng 200 250 250 0 empty empty blackout 0 -10 0 10 -262144
+-1 -1;
+#X text 72 467 --------- Blackout ---------;
+#X obj 334 518 bng 200 50 50 0 empty empty greenscreen 0 -10 0 10 -262144
+-1 -1;
+#X text 325 467 --------- Green screen ---------;
+#X obj 625 518 bng 200 50 50 0 empty empty warm 0 -10 0 10 -262144
+-1 -1;
+#X text 622 465 --------- Back ligts ---------;
+#X obj 625 650 bng 200 50 50 0 empty empty cold 0 -10 0 10 -262144
+-1 -1;
