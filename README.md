@@ -14,7 +14,7 @@ Faire une explication de l'interface et de ce qui controle quoi,  + photo
 
 Le patch DMX complet de l'installation actuelle de la salle fond vert, avec l'adresse DMX de chaque paramètre de chaque fixture, se trouve dans le pdf `Patch complet salle fond vert`.
 
-## Utilisation de la tablette de contrôle lumière
+<details> <summary> Utilisation de la tablette de contrôle lumière </summary>
 
 ### A. Interface
 
@@ -102,6 +102,8 @@ Il n'y a normalement pas besoin de modifier les paramètres OSC dans Chataigne, 
 On peux vérifier qu'on reçoit bien des messages OSC dans la partie Logger en bas à droite de l'interface Chataigne. Ici on reçoit le message /id du bouton `Scan` de la première interface.
 
 ![Plan de fire'](./images/screen8.png)
+
+</details>
 
 ## Créer une automation de contrôle dans Chataigne
 
