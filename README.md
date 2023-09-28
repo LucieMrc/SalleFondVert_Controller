@@ -14,98 +14,122 @@ Faire une explication de l'interface et de ce qui controle quoi,  + photo
 
 Le patch DMX complet de l'installation actuelle de la salle fond vert, avec l'adresse DMX de chaque paramètre de chaque fixture, se trouve dans le pdf `Patch complet salle fond vert`.
 
-<details> <summary> Utilisation de la tablette de contrôle lumière </summary>
-
-### A. Interface
-
-Les réglages de connexion :
-
-- Le bouton `Scan` cherche les clients OSC (qui envoit le message /id), 
-- Le bouton `Connect` se connecte quand on trouve un client,
-- Le bouton `Broadcast` envoit les messages OSC à tous les clients du réseau.
-
-Le plus simple est de cliquer juste sur `Scan` puis `Broadcast`.
-
-![Plan de fire'](./images/screen1.jpg)
-
-Les contrôles des lyres avant (101 et 121), milieu (141 et 161) et arrière (181 et 201) :
-
-- Le sélecteur de couleurs qui envoit les messages R, G et B,
-- Le slider du blanc,
-- Le slider du zoom qui permet de choisir le focus/zoom de la lyre,
-- Le pad du pan/tilt qui permet d'orienter la lyre,
-- Le slider du dimmer pour choisir la luminosité.
-
-![Plan de fire'](./images/screen2.jpg)
-
-Les contrôles des PAR à l'avant (51, 61, 71 et 81) et des PAR du milieu (11, 21, 31 et 41) :
-
-Les PAR de l'avant sont des Warm White (blanc chaud) dont on ne contrôle que le dimmer (luminosité), une par une ou toutes en même temps avec le master, avec des sliders.
-
-Les PAR du milieu sont des RGBW (Red Green Blue White) dont on contrôle la luminosité de tous avec le slider master, et les paramètres :
-- Le sélecteur de couleurs qui envoit les messages R, G et B,
-- Le slider du dimmer pour choisir la luminosité,
-- Le slider du blanc.
-
-![Plan de fire'](./images/screen5.jpg)
-
-Les presets :
-
-- Le Blackout pour tout éteindre,
-- Les PAR milieu : un réglage Warm pour une lumière harmonieuse chaude et un Cold pour une lumière harmonieuse froide.
-- Le Greenscreen pour une lumière uniforme sur le fond vert pour faire du chromakey.
-
-![Plan de fire'](./images/screen6.jpg)
-
-### B. Mise en route
-
-Ouvrir l'application `osc_controller_fondvert_android` sur la tablette.
-
-Allumer l'ordinateur, ouvrir le patch Chataigne, et vérifier la connexion de la tablette à Chataigne.
-
-L'ordinateur de la salle fond vert doit être connecté sur le même réseau wifi que la tablette afin qu'ils puissent communiquer en OSC, le plus simple est d'utiliser le réseau du HUAWEI.
-
-Il n'y a normalement pas besoin de modifier les paramètres OSC dans Chataigne, mais on peux vérifier qu'on détecte bien une adresse IP en 192.168.x.x (ici : 192.168.8.107) dans la partie OSC Input.
-
-![Plan de fire'](./images/screen7.png)
-
-On peux aussi vérifier qu'on reçoit bien des messages OSC dans la partie Logger en bas à droite de l'interface Chataigne. Ici on reçoit le message /id du bouton `Scan` de la première interface.
-
-![Plan de fire'](./images/screen8.png)
-
-## Utilisation de l'interface desktop
-
-### A. Interface
-
-Même principe que pour l'interface tablette.
-
-Une première interface avec les réglages de connexion :
-
-![Plan de fire'](./images/screen9.png)
-
-Une seconde interface avec les contrôles de 6 lyres :
-
-![Plan de fire'](./images/screen10.png)
-
-Une dernière interface avec les controles des 8 PAR, les 4 WW qui éclairent le fond vert et les 4 RGBW du milieu, ainsi que les presets :
-
-![Plan de fire'](./images/screen11.png)
-
-### B. Mise en route
-
-Ouvrir le programme Processing `osc_controller_interface`, ainsi que le patch Chataigne.
-
-Pas besoin de se poser des questions de réseau wifi étant donné que Chataigne et Processing communiquent directement en local en OSC.
-
-Il n'y a normalement pas besoin de modifier les paramètres OSC dans Chataigne, qui sont en adéquation avec ceux écrit dans le code Processing.
-
-On peux vérifier qu'on reçoit bien des messages OSC dans la partie Logger en bas à droite de l'interface Chataigne. Ici on reçoit le message /id du bouton `Scan` de la première interface.
-
-![Plan de fire'](./images/screen8.png)
-
-</details>
+Étape 1 : allumer les lights avec les interrupteurs "prises" à droite de la porte.
 
 ## Créer une automation de contrôle dans Chataigne
+
+La timeline permettant de créer des séquences se trouve en bas de l'interface :
+
+!['screen sequence'](./images/screen20.png)
+
+On clique sur le bouton ➕ vert dans la partie `Sequences`.
+
+!['screen sequence'](./images/screen21.png)
+
+Cette séquence correspond à une lecture de la timeline, sur laquelle plusieurs automations de paramètres pourront être lues en même temps.
+
+On clique sur le bouton ➕ vert dans la partie `Sequence Editor` pour créer une première automation.
+
+!['screen sequence'](./images/screen22.png)
+
+On peux choisir le type d'automation :
+- `Trigger` déclenchera des évenements sans transition, en envoyant une valeur à un moment donné de la timeline. Ça sert par exemple à éteindre tous les lights d'un coup.
+- `Mapping` permet de modifier une valeur suivant une courbe. Ça sert par exemple à faire tourner lentement une lyre ou baisser progressivement la luminosité.
+- `Mapping 2D` est comme Mapping, mais en 2D permet de modifier une valeur suivant un chemin 2D. Plus d'infos [ici](https://bkuperberg.gitbook.io/chataigne-docs/v/fr/the-time-machine-sequences/mapping-2d-layer).
+- `Audio` permet de synchroniser une piste son à la séquence, mais nécessite une carte son. Ça sert par exemple à avoir des sons qui se jouent en même temps que les animations.
+- `Color` permet de faire évoluer une couleur dans le temps. Ça sert par exemple à créer des transitions de couleurs des lyres.
+- `Sequences` permet de faire jouer plusieurs séquences en même temps ou sur la même timeline. Ça sert par exemple à créer plusieurs séquences d'animations de paramètres puis à les assembler dans le temps.
+
+!['screen sequence'](./images/screen23.png)
+
+
+### Mapping de valeur
+
+**1 : Créer le mapping de valeur**
+
+On choisit `Mapping` : comme on travaille avec du DMX, on peux commencer par modifier la `Range` (de base de 0 à 1) en 0 à 255. Si on le fait après avoir placé des points, il faut d'abord choisir `Range Remap Mode` > `Proportional` pour que les points se replacent de manière proportionnelle sur la nouvelle range.
+
+!['screen sequence'](./images/screen24.png)
+
+**2 : Enregistrer la courbe de valeur**
+
+Il y a plusieurs méthodes pour placer des points dans la séquence. La première est de **dessiner directement sur la timeline** de l'automation, en maintenant `ctrl`+`shift` enfoncées et en faisant glisser la souris en cliquant.
+
+!['screen sequence'](./images/screen25.png)
+
+Lorsqu'on relâche le clic, le tracé jaune devient des courbes avec des points modifiables pour finaliser la courbe d'automation.
+
+!['screen sequence'](./images/screen26.png)
+
+On peux aussi brancher un contrôleur midi (voir [la mise en place du midi](###-La-mise-en-place)), et **créer la courbe d'automation en enregistrant la valeur midi**.
+
+Pour ça, il faut aller dans l'inspecteur, en haut à gauche.
+
+!['screen sequence'](./images/screen28.png)
+
+Dans la partie `Recorder`, cliquer sur `Learn` et toucher un des boutons/slider/potards du controleur midi pour que Chataigne détecte la modification d'une des valeurs midi et assigne la valeur au module `Recorder`.
+
+!['screen sequence'](./images/screen27.png)
+
+Ensuite, cocher `Arm` dans le `Recorder` ou directement dans la timeline, lancer la lecture de la timeline et toucher le controleur pour créer une courbe à partir des valeurs midi reçues.
+
+!['screen sequence'](./images/screen29.png)
+
+La courbe est rouge pendant l'enregistrement, puis devient une courbe aux points modifiables lorsqu'on met pause au défilement de la timeline.
+
+!['screen sequence'](./images/screen30.png)
+
+⚠️ Les données reçues en midi seront entre 0 et 127, le mieux est donc de mettre la `Range` entre 0 et 127, enregistrer avec le midi, puis choisir `Range Remap Mode` > `Proportional`, et changer la `Range` entre 0 et 255.
+
+**3 : Assigner le mapping de valeur**
+
+Dans l'inspecteur, on peux ajouter un ou plusieurs outputs à la courbe de valeur. Toutes les automations peuvent être appliquées à plusieurs paramètres ou plusieurs DMX par exemple.
+
+!['screen sequence'](./images/screen31.png)
+
+J'ai par exemple ici deux manières d'assigner ma courbe de valeur à la valeur de white de la lyre top gauche : soit en assignant directement au channel DMX, soit en l'assignant à la Custom Variable que j'ai crée pour ce paramètre.
+
+!['screen sequence'](./images/screen32.png)
+
+### Courbe de couleur
+
+**1 : Créer l'évolution de couleurs**
+
+En choisissant `Color`, la couleur de base est rouge sur toute la timeline.
+
+!['screen sequence'](./images/screen33.png)
+
+Pour ajouter des couleurs, il suffit de double-cliquer sur la timeline pour ajouter des points déplaçables.
+
+!['screen sequence'](./images/screen34.png)
+
+On peux ensuite modifier la couleur de ces points en cliquant dessus, puis en allant dans l'inspecteur (en haut à droite) et en double-cliquant sur le carré tout en haut à droite :
+
+!['screen sequence'](./images/screen35.png)
+
+On peux alors choisir la couleur exacte, l'opacité, et donner le code hex de la couleur si besoin.
+
+!['screen sequence'](./images/screen36.png)
+
+Dans l'inspecteur, on peux également modifier la position exacte de la couleur sur la timeline avec `Time`, et la transition avec la couleur suivante avec `Interpolation` (Linear = dégradé, None = pas de transition).
+
+!['screen sequence'](./images/screen37.png)
+
+**2 : Assigner l'évolution de couleurs**
+
+Dans la partie `Outputs` de l'inspecteur, on peux assigner la couleur aux lights de deux manières :
+- Soit directement en DMX, avec `Set Color` et en choisissant le channel de départ de la couleur (le channel de la valeur de rouge, le suivant sera toujours la valeur de vert puis la valeur de bleu), ici 109 pour la lyre top gauche :
+
+!['screen sequence'](./images/screen38.png)
+
+- Soit en assignant aux Custom Variables de chaque couleur :
+
+!['screen sequence'](./images/screen39.png)
+
+Pour celà, dans la ligne `Value`, il faut cliquer sur le petit symbole lien 🔗 et choisir la couleur correspondante.
+
+!['screen sequence'](./images/screen40.png)
+
 
 ## Le midi-learn dans Chataigne
 
