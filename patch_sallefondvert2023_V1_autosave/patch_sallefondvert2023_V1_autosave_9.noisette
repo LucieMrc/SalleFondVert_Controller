@@ -5895,8 +5895,8 @@
       }
     ],
     "viewOffset": [
-      122,
-      -39
+      141,
+      -247
     ],
     "viewZoom": 1.0,
     "transitions": {
@@ -5910,8 +5910,8 @@
     "comments": {
       "hideInEditor": true,
       "viewOffset": [
-        122,
-        -39
+        141,
+        -247
       ],
       "viewZoom": 1.0
     }

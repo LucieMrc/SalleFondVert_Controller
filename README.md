@@ -1,6 +1,6 @@
 # SalleFondVert_Controller
 
-**Ou comment utiliser plus ou moins en autonomie le controleur light de la salle fond vert qui fait tablette (OSC) > ordinateur (Chataigne) > lights (DMX).**
+**Ou comment utiliser plus ou moins en autonomie les lights de la salle fond vert avec Chataigne.**
 
 <!-- Le patch sur Chataigne : modifier les variables dans Chataigne pour les renvoyer en OSC ? et notamment pouvoir rallumer après un blackout ?
 Blackout c'est un toggle ?
@@ -16,7 +16,7 @@ Le patch DMX complet de l'installation actuelle de la salle fond vert, avec l'ad
 
 Étape 1 : allumer les lights avec les interrupteurs "prises" à droite de la porte.
 
-## Créer une automation de contrôle dans Chataigne
+## Créer une conduite lumière dans Chataigne
 
 La timeline permettant de créer des séquences se trouve en bas de l'interface :
 
@@ -63,7 +63,7 @@ Lorsqu'on relâche le clic, le tracé jaune devient des courbes avec des points 
 
 On peux aussi brancher un contrôleur midi (voir [la mise en place du midi](###-La-mise-en-place)), et **créer la courbe d'automation en enregistrant la valeur midi**.
 
-Pour ça, il faut aller dans l'inspecteur, en haut à gauche.
+Pour ça, il faut aller dans l'inspecteur, en haut à droite.
 
 !['screen sequence'](./images/screen28.png)
 
@@ -71,7 +71,7 @@ Dans la partie `Recorder`, cliquer sur `Learn` et toucher un des boutons/slider/
 
 !['screen sequence'](./images/screen27.png)
 
-Ensuite, cocher `Arm` dans le `Recorder` ou directement dans la timeline, lancer la lecture de la timeline et toucher le controleur pour créer une courbe à partir des valeurs midi reçues.
+Ensuite, cocher `Arm` dans le `Recorder` ou directement dans la timeline, lancer la lecture de la timeline et toucher le même bouton/slider/potars du controleur midi pour créer une courbe à partir des valeurs midi reçues.
 
 !['screen sequence'](./images/screen29.png)
 
@@ -139,7 +139,7 @@ Pour contrôler certains paramètres avec un controleur MIDI, en faisant automat
 
 J'utilise ici un Midimix, avec 24 potards, 9 sliders et 20 boutons.
 
-Pour utiliser un controleur midi, on ajoute un module MIDI dans la partie Modules à gauche de l'interface de Madmapper.
+Pour utiliser un controleur midi, on ajoute un module MIDI dans la partie Modules à gauche de l'interface de Chataigne.
 
 ![Plan de fire'](./images/screen12.png)
 
@@ -157,9 +157,7 @@ Pour assigner une valeur midi à un channel DMX/paramètre, il suffit de cliquer
 
 ![Plan de fire'](./images/screen15.png)
 
-Dans la partie Inputs de l'inspecteur, on a déjà l'input d'OSC qui récupère les valeurs de l'interface Processing.
-
-Il suffit de créer un nouvel input en cliquant sur le bouton ➕ en haut à droite de la partie Inputs.
+Dans la partie Inputs de l'inspecteur, il suffit de créer un nouvel input en cliquant sur le bouton ➕ en haut à droite de la partie Inputs.
 
 ![Plan de fire'](./images/screen16.png)
 
@@ -167,9 +165,8 @@ En cliquant sur le carré `Learn` à droite puis en touchant le controleur midi 
 
 ![Plan de fire'](./images/screen17.png)
 
-Néanmoins, le controleur midi envoit des valeurs de 0 à 127, et le DMX reçoit des valeurs de 0 à 255. 
-
-<!--Si on ne remapppe pas la valeur reçue en midi pour qu'elle aille de 0 à 255, -->
+⚠️ Le controleur midi envoit des valeurs de 0 à 127, et le DMX reçoit des valeurs de 0 à 255. 
+Si on ne remappe pas les valeurs reçues en midi, tous les paramètres ne seront "qu'à moitié" : envoyer le max de brightness avec le controleur ne résultera qu'à une luminosité moyenne sur la light, le pan max de la fixture ne sera qu'à la moitié de l'axe, et ainsi de suite.
 
 Il faut donc remapper les valeurs de l'input pour qu'elle sorte en output en allant de 0 à 255.
 Pour cela, on ajoute un filtre en cliquant sur le bouton ➕ de la partie Filters, Remap > Remap.
@@ -180,9 +177,8 @@ On assigne la plage d'entrée allant de 0 à 127 et la plage de sortie allant de
 
 ![Plan de fire'](./images/screen19.png)
 
-Attention, en ajoutant le contrôle MIDI en input par dessus le contrôle OSC, le contrôle MIDI prend la priorité et la modification de la valeur OSC ne changera plus le paramètre en sortie.
+⚠️ Le controle midi devrait être le premier input de la liste des inputs si il y en a d'autres et qu'on veux le controle midi soit prioritaire.
 
-De la même façon, le fait d'ajouter un filtre de remappage va modifier la valeur OSC si on veux l'utiliser, étant donné qu'elle arrive déjà en 0 à 255. On peux désactiver le filtre en cliquant sur le bouton éteindre rouge en haut à droite de la partie `Filters`.
 
 ## Pour aller + loin
 

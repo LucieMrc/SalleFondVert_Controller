@@ -447,19 +447,19 @@
             {
               "type": 1,
               "width": 1512,
-              "height": 534,
+              "height": 661,
               "direction": 1,
               "shifters": [
                 {
                   "type": 1,
                   "width": 249,
-                  "height": 534,
+                  "height": 661,
                   "direction": 2,
                   "shifters": [
                     {
                       "type": 0,
                       "width": 249,
-                      "height": 277,
+                      "height": 341,
                       "currentContent": "Modules",
                       "tabs": [
                         {
@@ -470,7 +470,7 @@
                     {
                       "type": 0,
                       "width": 249,
-                      "height": 251,
+                      "height": 314,
                       "currentContent": "Custom Variables",
                       "tabs": [
                         {
@@ -483,7 +483,7 @@
                 {
                   "type": 0,
                   "width": 755,
-                  "height": 534,
+                  "height": 661,
                   "currentContent": "State Machine",
                   "tabs": [
                     {
@@ -500,7 +500,7 @@
                 {
                   "type": 0,
                   "width": 496,
-                  "height": 534,
+                  "height": 661,
                   "currentContent": "Inspector",
                   "tabs": [
                     {
@@ -513,13 +513,13 @@
             {
               "type": 1,
               "width": 1512,
-              "height": 278,
+              "height": 151,
               "direction": 1,
               "shifters": [
                 {
                   "type": 0,
                   "width": 178,
-                  "height": 278,
+                  "height": 151,
                   "currentContent": "Sequences",
                   "tabs": [
                     {
@@ -530,7 +530,7 @@
                 {
                   "type": 0,
                   "width": 1091,
-                  "height": 278,
+                  "height": 151,
                   "currentContent": "Sequence Editor",
                   "tabs": [
                     {
@@ -541,7 +541,7 @@
                 {
                   "type": 0,
                   "width": 231,
-                  "height": 278,
+                  "height": 151,
                   "currentContent": "Logger",
                   "tabs": [
                     {
@@ -766,7 +766,7 @@
             {
               "parameters": [
                 {
-                  "value": 255.0,
+                  "value": 0.6823529601097107,
                   "controlAddress": "/red",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -784,6 +784,7 @@
             {
               "parameters": [
                 {
+                  "value": 0.8078431487083435,
                   "controlAddress": "/green",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -801,6 +802,7 @@
             {
               "parameters": [
                 {
+                  "value": 0.6274510025978088,
                   "controlAddress": "/blue",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -5893,8 +5895,8 @@
       }
     ],
     "viewOffset": [
-      122,
-      -39
+      141,
+      -247
     ],
     "viewZoom": 1.0,
     "transitions": {
@@ -5908,8 +5910,8 @@
     "comments": {
       "hideInEditor": true,
       "viewOffset": [
-        122,
-        -39
+        141,
+        -247
       ],
       "viewZoom": 1.0
     }
@@ -5977,6 +5979,117 @@
                     "viewZoom": 1.0
                   },
                   "outputs": {
+                    "items": [
+                      {
+                        "niceName": "MappingOutput",
+                        "type": "BaseItem",
+                        "commandModule": "dmx",
+                        "commandPath": "",
+                        "commandType": "Set Color",
+                        "command": {
+                          "parameters": [
+                            {
+                              "value": 109,
+                              "hexMode": false,
+                              "controlAddress": "/startChannel"
+                            }
+                          ],
+                          "paramLinks": {
+                            "color": {
+                              "linkType": 1,
+                              "mappingValueIndex": 0
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "niceName": "MappingOutput 1",
+                        "type": "BaseItem",
+                        "commandModule": "customVariables",
+                        "commandPath": "",
+                        "commandType": "Set Value",
+                        "command": {
+                          "parameters": [
+                            {
+                              "value": "/lyreTopGauche/red",
+                              "controlAddress": "/target"
+                            },
+                            {
+                              "value": "All",
+                              "controlAddress": "/component"
+                            },
+                            {
+                              "value": "Equals",
+                              "controlAddress": "/operator"
+                            }
+                          ],
+                          "paramLinks": {
+                            "value": {
+                              "linkType": 1,
+                              "mappingValueIndex": 0
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "niceName": "MappingOutput 3",
+                        "type": "BaseItem",
+                        "commandModule": "customVariables",
+                        "commandPath": "",
+                        "commandType": "Set Value",
+                        "command": {
+                          "parameters": [
+                            {
+                              "value": "/lyreTopGauche/green",
+                              "controlAddress": "/target"
+                            },
+                            {
+                              "value": "All",
+                              "controlAddress": "/component"
+                            },
+                            {
+                              "value": "Equals",
+                              "controlAddress": "/operator"
+                            }
+                          ],
+                          "paramLinks": {
+                            "value": {
+                              "linkType": 1,
+                              "mappingValueIndex": 1
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "niceName": "MappingOutput 2",
+                        "type": "BaseItem",
+                        "commandModule": "customVariables",
+                        "commandPath": "",
+                        "commandType": "Set Value",
+                        "command": {
+                          "parameters": [
+                            {
+                              "value": "/lyreTopGauche/blue",
+                              "controlAddress": "/target"
+                            },
+                            {
+                              "value": "All",
+                              "controlAddress": "/component"
+                            },
+                            {
+                              "value": "Equals",
+                              "controlAddress": "/operator"
+                            }
+                          ],
+                          "paramLinks": {
+                            "value": {
+                              "linkType": 1,
+                              "mappingValueIndex": 2
+                            }
+                          }
+                        }
+                      }
+                    ],
                     "viewOffset": [
                       0,
                       0
@@ -5993,8 +6106,8 @@
                         {
                           "value": [
                             1.0,
-                            0.0,
-                            0.0,
+                            0.572549045085907,
+                            0.7607843279838562,
                             1.0
                           ],
                           "controlAddress": "/color"
@@ -6006,17 +6119,21 @@
                     {
                       "parameters": [
                         {
-                          "value": 6.226990222930908,
+                          "value": 4.212338447570801,
                           "controlAddress": "/time"
                         },
                         {
                           "value": [
+                            0.4274509847164154,
                             1.0,
-                            0.0,
-                            0.0,
+                            0.5215686559677124,
                             1.0
                           ],
                           "controlAddress": "/color"
+                        },
+                        {
+                          "value": "Linear",
+                          "controlAddress": "/interpolation"
                         }
                       ],
                       "niceName": "Color 2",
@@ -6030,12 +6147,16 @@
                         },
                         {
                           "value": [
+                            0.772549033164978,
+                            0.9921568632125854,
                             1.0,
-                            0.0,
-                            0.0,
                             1.0
                           ],
                           "controlAddress": "/color"
+                        },
+                        {
+                          "value": "None",
+                          "controlAddress": "/interpolation"
                         }
                       ],
                       "niceName": "Color 3",
@@ -6050,8 +6171,8 @@
                         {
                           "value": [
                             1.0,
-                            0.0,
-                            0.0,
+                            0.8823529481887817,
+                            0.6941176652908325,
                             1.0
                           ],
                           "controlAddress": "/color"

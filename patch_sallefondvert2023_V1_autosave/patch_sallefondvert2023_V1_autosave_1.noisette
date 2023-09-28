@@ -447,19 +447,19 @@
             {
               "type": 1,
               "width": 1512,
-              "height": 534,
+              "height": 661,
               "direction": 1,
               "shifters": [
                 {
                   "type": 1,
                   "width": 249,
-                  "height": 534,
+                  "height": 661,
                   "direction": 2,
                   "shifters": [
                     {
                       "type": 0,
                       "width": 249,
-                      "height": 277,
+                      "height": 341,
                       "currentContent": "Modules",
                       "tabs": [
                         {
@@ -470,7 +470,7 @@
                     {
                       "type": 0,
                       "width": 249,
-                      "height": 251,
+                      "height": 314,
                       "currentContent": "Custom Variables",
                       "tabs": [
                         {
@@ -483,7 +483,7 @@
                 {
                   "type": 0,
                   "width": 755,
-                  "height": 534,
+                  "height": 661,
                   "currentContent": "State Machine",
                   "tabs": [
                     {
@@ -500,7 +500,7 @@
                 {
                   "type": 0,
                   "width": 496,
-                  "height": 534,
+                  "height": 661,
                   "currentContent": "Inspector",
                   "tabs": [
                     {
@@ -513,13 +513,13 @@
             {
               "type": 1,
               "width": 1512,
-              "height": 278,
+              "height": 151,
               "direction": 1,
               "shifters": [
                 {
                   "type": 0,
                   "width": 178,
-                  "height": 278,
+                  "height": 151,
                   "currentContent": "Sequences",
                   "tabs": [
                     {
@@ -530,7 +530,7 @@
                 {
                   "type": 0,
                   "width": 1091,
-                  "height": 278,
+                  "height": 151,
                   "currentContent": "Sequence Editor",
                   "tabs": [
                     {
@@ -541,7 +541,7 @@
                 {
                   "type": 0,
                   "width": 231,
-                  "height": 278,
+                  "height": 151,
                   "currentContent": "Logger",
                   "tabs": [
                     {
@@ -645,7 +645,7 @@
           "parameters": [
             {
               "value": [
-                "",
+                "-1037127914",
                 ""
               ],
               "controlAddress": "/devices"
@@ -665,6 +665,24 @@
         },
         "values": {
           "parameters": [
+            {
+              "value": 73,
+              "minValue": 0,
+              "maxValue": 127,
+              "default": 0,
+              "hexMode": false,
+              "channel": 1,
+              "pitchOrNumber": 18,
+              "MIDIType": 2,
+              "controlAddress": "/_1_CC18",
+              "type": "MIDI Value",
+              "niceName": "[1] CC18",
+              "customizable": false,
+              "removable": true,
+              "description": "Channel 1 : CC18",
+              "hideInEditor": false,
+              "feedbackOnly": false
+            },
             {
               "value": 86,
               "minValue": 0,
@@ -748,7 +766,7 @@
             {
               "parameters": [
                 {
-                  "value": 255.0,
+                  "value": 0.6823529601097107,
                   "controlAddress": "/red",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -766,6 +784,7 @@
             {
               "parameters": [
                 {
+                  "value": 0.8078431487083435,
                   "controlAddress": "/green",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -783,6 +802,7 @@
             {
               "parameters": [
                 {
+                  "value": 0.6274510025978088,
                   "controlAddress": "/blue",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -800,7 +820,7 @@
             {
               "parameters": [
                 {
-                  "value": 162.5643615722656,
+                  "value": 0.0,
                   "controlAddress": "/white",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -5875,8 +5895,8 @@
       }
     ],
     "viewOffset": [
-      122,
-      -39
+      141,
+      -247
     ],
     "viewZoom": 1.0,
     "transitions": {
@@ -5890,8 +5910,8 @@
     "comments": {
       "hideInEditor": true,
       "viewOffset": [
-        122,
-        -39
+        141,
+        -247
       ],
       "viewZoom": 1.0
     }
@@ -5907,822 +5927,17 @@
             {
               "parameters": [
                 {
-                  "value": 120.0,
+                  "value": 45.0,
                   "controlAddress": "/listSize"
                 },
                 {
-                  "value": 120,
+                  "value": 45,
                   "hexMode": false,
                   "controlAddress": "/uiHeight"
                 }
               ],
-              "niceName": "Mapping",
+              "niceName": "Color",
               "containers": {
-                "automation": {
-                  "parameters": [
-                    {
-                      "value": 30.0,
-                      "controlAddress": "/length"
-                    },
-                    {
-                      "value": 0.0,
-                      "controlAddress": "/position"
-                    },
-                    {
-                      "value": [
-                        0.0,
-                        1.0
-                      ],
-                      "controlAddress": "/viewValueRange"
-                    },
-                    {
-                      "value": [
-                        0.0,
-                        1.0
-                      ],
-                      "controlAddress": "/range",
-                      "enabled": true
-                    }
-                  ],
-                  "hideInEditor": true,
-                  "items": [
-                    {
-                      "parameters": [
-                        {
-                          "value": 0.4395604431629181,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.1333333253860474,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 0",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                0.0,
-                                -0.01027505844831467
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                -0.1300355195999146,
-                                -0.0355549156665802
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 0.9523810148239136,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.300000011920929,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 2",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                0.2110747098922729,
-                                0.05771303176879883
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                -0.2515215873718262,
-                                -0.05722206830978394
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 2.454212188720703,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.7083333730697632,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 3",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                0.04884052276611328,
-                                0.0
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                -0.04884004592895508,
-                                -0.005555570125579834
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 2.600732326507568,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.7250000238418579,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 4",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                0.1831505298614502,
-                                0.0
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                -0.1831502914428711,
-                                0.0
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 3.150183200836182,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.7250000238418579,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 5",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                0.8260886669158936,
-                                -0.06264513731002808
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                -0.3304896354675293,
-                                0.07518655061721802
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 5.714285850524902,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.3416666388511658,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 6",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                -0.005208492279052734,
-                                0.001184850931167603
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 5.750916481018066,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.3333333134651184,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 7",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                0.0,
-                                0.002777785062789917
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                -0.01221036911010742,
-                                0.002777785062789917
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 5.787546157836914,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.3333333134651184,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 9",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                0.07325983047485352,
-                                0.0
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                -0.07325983047485352,
-                                0.0
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 6.007326126098633,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.3333333134651184,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 10",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                0.696929931640625,
-                                0.07927584648132324
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                -1.259495258331299,
-                                -0.05445653200149536
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 7.655678272247314,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.7333333492279053,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 11",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                1.499518871307373,
-                                0.0648343563079834
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                -0.9783945083618164,
-                                0.08998709917068481
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 10.87912082672119,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.5083333253860474,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 12",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                0.04991054534912109,
-                                -0.004590451717376709
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                -0.04883956909179688,
-                                0.0
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 11.4285717010498,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.4333333373069763,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 13",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                0.01461505889892578,
-                                -0.003324806690216064
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                -0.06228351593017578,
-                                0.0
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 11.50183296203613,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.425000011920929,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 14",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                0.01220893859863281,
-                                -0.002777785062789917
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                -0.01220989227294922,
-                                0.002777785062789917
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 11.53846263885498,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.4166666865348816,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 15",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                0.298466682434082,
-                                0.0
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                -0.1114053726196289,
-                                -0.05077075958251953
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 12.12454319000244,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.5666666626930237,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 16",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                0.2641220092773438,
-                                0.1203688383102417
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                -0.7516269683837891,
-                                -0.1139970421791077
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 13.2600736618042,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.925000011920929,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 17",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                0.1110754013061523,
-                                0.0
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                -0.08553028106689453,
-                                -0.003891646862030029
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 13.66300392150879,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.9416666626930237,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 18",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                0.2075700759887695,
-                                0.0
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                -0.2075700759887695,
-                                0.0
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 14.2857141494751,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.9416666626930237,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 19",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                2.490843772888184,
-                                -0.2589613199234009
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                0.0,
-                                -0.3197317123413086
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 16.77655792236328,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.07499998807907104,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 20",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                0.0,
-                                0.05833333730697632
-                              ],
-                              "controlAddress": "/anchor1"
-                            },
-                            {
-                              "value": [
-                                -0.2564105987548828,
-                                -0.0364433266222477
-                              ],
-                              "controlAddress": "/anchor2"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 17.03296852111816,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.07499998807907104,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 23",
-                      "containers": {
-                        "easing": {
-                          "parameters": [
-                            {
-                              "value": [
-                                1.255483627319336,
-                                0.05428370833396912
-                              ],
-                              "controlAddress": "/anchor1"
-                            }
-                          ]
-                        }
-                      },
-                      "type": "Key"
-                    },
-                    {
-                      "parameters": [
-                        {
-                          "value": 18.53479957580566,
-                          "controlAddress": "/position"
-                        },
-                        {
-                          "value": 0.324999988079071,
-                          "controlAddress": "/value"
-                        },
-                        {
-                          "value": "Bezier",
-                          "controlAddress": "/easingType"
-                        }
-                      ],
-                      "niceName": "Key 24",
-                      "containers": {
-                        "easing": {
-                        }
-                      },
-                      "type": "Key"
-                    }
-                  ],
-                  "viewOffset": [
-                    0,
-                    0
-                  ],
-                  "viewZoom": 1.0
-                },
-                "recorder": {
-                },
                 "mapping": {
                   "niceName": "Mapping",
                   "type": "Mapping",
@@ -6764,15 +5979,217 @@
                     "viewZoom": 1.0
                   },
                   "outputs": {
+                    "items": [
+                      {
+                        "niceName": "MappingOutput",
+                        "type": "BaseItem",
+                        "commandModule": "dmx",
+                        "commandPath": "",
+                        "commandType": "Set Color",
+                        "command": {
+                          "parameters": [
+                            {
+                              "value": 109,
+                              "hexMode": false,
+                              "controlAddress": "/startChannel"
+                            }
+                          ],
+                          "paramLinks": {
+                            "color": {
+                              "linkType": 1,
+                              "mappingValueIndex": 0
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "niceName": "MappingOutput 1",
+                        "type": "BaseItem",
+                        "commandModule": "customVariables",
+                        "commandPath": "",
+                        "commandType": "Set Value",
+                        "command": {
+                          "parameters": [
+                            {
+                              "value": "/lyreTopGauche/red",
+                              "controlAddress": "/target"
+                            },
+                            {
+                              "value": "All",
+                              "controlAddress": "/component"
+                            },
+                            {
+                              "value": "Equals",
+                              "controlAddress": "/operator"
+                            }
+                          ],
+                          "paramLinks": {
+                            "value": {
+                              "linkType": 1,
+                              "mappingValueIndex": 0
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "niceName": "MappingOutput 3",
+                        "type": "BaseItem",
+                        "commandModule": "customVariables",
+                        "commandPath": "",
+                        "commandType": "Set Value",
+                        "command": {
+                          "parameters": [
+                            {
+                              "value": "/lyreTopGauche/green",
+                              "controlAddress": "/target"
+                            },
+                            {
+                              "value": "All",
+                              "controlAddress": "/component"
+                            },
+                            {
+                              "value": "Equals",
+                              "controlAddress": "/operator"
+                            }
+                          ],
+                          "paramLinks": {
+                            "value": {
+                              "linkType": 1,
+                              "mappingValueIndex": 1
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "niceName": "MappingOutput 2",
+                        "type": "BaseItem",
+                        "commandModule": "customVariables",
+                        "commandPath": "",
+                        "commandType": "Set Value",
+                        "command": {
+                          "parameters": [
+                            {
+                              "value": "/lyreTopGauche/blue",
+                              "controlAddress": "/target"
+                            },
+                            {
+                              "value": "All",
+                              "controlAddress": "/component"
+                            },
+                            {
+                              "value": "Equals",
+                              "controlAddress": "/operator"
+                            }
+                          ],
+                          "paramLinks": {
+                            "value": {
+                              "linkType": 1,
+                              "mappingValueIndex": 2
+                            }
+                          }
+                        }
+                      }
+                    ],
                     "viewOffset": [
                       0,
                       0
                     ],
                     "viewZoom": 1.0
                   }
+                },
+                "colors": {
+                  "editorIsCollapsed": true,
+                  "hideInEditor": true,
+                  "items": [
+                    {
+                      "parameters": [
+                        {
+                          "value": [
+                            1.0,
+                            0.572549045085907,
+                            0.7607843279838562,
+                            1.0
+                          ],
+                          "controlAddress": "/color"
+                        }
+                      ],
+                      "niceName": "Color 1",
+                      "type": "BaseItem"
+                    },
+                    {
+                      "parameters": [
+                        {
+                          "value": 4.212338447570801,
+                          "controlAddress": "/time"
+                        },
+                        {
+                          "value": [
+                            0.4274509847164154,
+                            1.0,
+                            0.5215686559677124,
+                            1.0
+                          ],
+                          "controlAddress": "/color"
+                        },
+                        {
+                          "value": "Linear",
+                          "controlAddress": "/interpolation"
+                        }
+                      ],
+                      "niceName": "Color 2",
+                      "type": "BaseItem"
+                    },
+                    {
+                      "parameters": [
+                        {
+                          "value": 6.227106094360352,
+                          "controlAddress": "/time"
+                        },
+                        {
+                          "value": [
+                            0.772549033164978,
+                            0.9921568632125854,
+                            1.0,
+                            1.0
+                          ],
+                          "controlAddress": "/color"
+                        },
+                        {
+                          "value": "None",
+                          "controlAddress": "/interpolation"
+                        }
+                      ],
+                      "niceName": "Color 3",
+                      "type": "BaseItem"
+                    },
+                    {
+                      "parameters": [
+                        {
+                          "value": 11.57509136199951,
+                          "controlAddress": "/time"
+                        },
+                        {
+                          "value": [
+                            1.0,
+                            0.8823529481887817,
+                            0.6941176652908325,
+                            1.0
+                          ],
+                          "controlAddress": "/color"
+                        }
+                      ],
+                      "niceName": "Color 4",
+                      "type": "BaseItem"
+                    }
+                  ],
+                  "viewOffset": [
+                    0,
+                    0
+                  ],
+                  "viewZoom": 1.0
                 }
               },
-              "type": "Mapping"
+              "type": "Color"
             }
           ],
           "viewOffset": [
