@@ -1,4 +1,4 @@
-# SalleFondVert_Controller
+# Lights de la salle fond vert
 
 **Ou comment utiliser plus ou moins en autonomie les lights de la salle fond vert avec Chataigne.**
 
