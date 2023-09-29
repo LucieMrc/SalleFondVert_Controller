@@ -1,5 +1,7 @@
 # Lights de la salle fond vert
 
+*[english version](https://github.com/LucieMrc/GreenScreenStudio)*
+
 **Ou comment utiliser plus ou moins en autonomie les lights de la salle fond vert avec Chataigne.**
 
 <!-- Le patch sur Chataigne : modifier les variables dans Chataigne pour les renvoyer en OSC ? et notamment pouvoir rallumer après un blackout ?
@@ -103,7 +105,7 @@ Pour ajouter des couleurs, il suffit de double-cliquer sur la timeline pour ajou
 
 !['screen sequence'](./images/screen34.png)
 
-On peux ensuite modifier la couleur de ces points en cliquant dessus, puis en allant dans l'inspecteur (en haut à droite) et en double-cliquant sur le carré tout en haut à droite :
+On peux ensuite modifier la couleur de ces points soit en double-cliquant dessus, soit en cliquant dessus, puis en allant dans l'inspecteur (en haut à droite) et en double-cliquant sur le carré tout en haut à droite :
 
 !['screen sequence'](./images/screen35.png)
 
@@ -182,4 +184,8 @@ On assigne la plage d'entrée allant de 0 à 127 et la plage de sortie allant de
 
 ## Pour aller + loin
 
-Le [tuto introduction à Chataigne](https://github.com/LucieMrc/Chataigne_2spi).
+- La [documentation officielle de Chataigne](https://bkuperberg.gitbook.io/chataigne-docs/v/fr/)
+
+- Le [tuto introduction à Chataigne](https://github.com/LucieMrc/Chataigne_2spi) (🚧 en travaux 🚧).
+
+- Le tuto [Touchdesigner vers Chataigne](https://github.com/LucieMrc/TouchDesigner_Chataigne).
