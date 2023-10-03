@@ -124,13 +124,26 @@ Dans la partie `Outputs` de l'inspecteur, on peux assigner la couleur aux lights
 
 !['screen sequence'](./images/screen38.png)
 
-- Soit en assignant aux Custom Variables de chaque couleur :
+- Soit en assignant la Custop Variable de la couleur en choisissant `Custom Variables` > `Set Value`.
+
+!['screen sequence'](./images/screen41.png)
+
+Ici la Target est `lyre top gauche` > `Color`.
+
+!['screen sequence'](./images/screen42.png)
+
+Donc la Custom Variable a la couleur et l'envoit en DMX dans la partie mapping de la state machine :
+
+!['screen sequence'](./images/screen43.png)
+
+<!-- - Soit en assignant aux Custom Variables de chaque couleur :
 
 !['screen sequence'](./images/screen39.png)
 
 Pour celà, dans la ligne `Value`, il faut cliquer sur le petit symbole lien 🔗 et choisir la couleur correspondante.
 
 !['screen sequence'](./images/screen40.png)
+-->
 
 
 ## Le midi-learn dans Chataigne
