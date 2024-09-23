@@ -16,6 +16,8 @@ Faire une explication de l'interface et de ce qui controle quoi,  + photo
 
 Le patch DMX complet de l'installation actuelle de la salle fond vert, avec l'adresse DMX de chaque paramètre de chaque fixture, se trouve dans le pdf `Patch complet salle fond vert`.
 
+Le projet Chataigne correspondant à la salle fond vert est soit "fondvert_TD_sept24.noisette" si on a Chataigne version 1.9.14 ou supérieur, ou "fondvert_TD_oct23.noisette" si on a Chataigne version 1.9.13 ou inférieur.
+
 Étape 1 : allumer les lights avec les interrupteurs "prises" à droite de la porte.
 
 ## Créer une conduite lumière dans Chataigne
