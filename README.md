@@ -93,6 +93,10 @@ Dans l'inspecteur, on peux ajouter un ou plusieurs outputs à la courbe de valeu
 
 J'ai par exemple ici deux manières d'assigner ma courbe de valeur à la valeur de white de la lyre top gauche : soit en assignant directement au channel DMX, soit en l'assignant à la Custom Variable que j'ai crée pour ce paramètre.
 
+J'ai par exemple ici deux manières d'assigner ma courbe de valeur à la valeur de dimmer de la lyre top gauche :
+- Soit en assignant directement au channel DMX (ici : 107) et en laissant l'Univers par défaut.
+- Ou en l'assignant à la Custom Variable que j'ai crée pour ce paramètre (ici : `Custom Variables` > `Set Value`, puis la Target est `lyre top gauche` > `Dimmer`).
+
 !['screen sequence'](./images/screen32.png)
 
 ### Courbe de couleur

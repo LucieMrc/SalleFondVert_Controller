@@ -467,31 +467,31 @@
     "mainLayout": {
       "type": 1,
       "width": 1512,
-      "height": 921,
+      "height": 813,
       "direction": 2,
       "shifters": [
         {
           "type": 1,
           "width": 1512,
-          "height": 921,
+          "height": 813,
           "direction": 2,
           "shifters": [
             {
               "type": 1,
               "width": 1512,
-              "height": 654,
+              "height": 754,
               "direction": 1,
               "shifters": [
                 {
                   "type": 1,
                   "width": 249,
-                  "height": 654,
+                  "height": 754,
                   "direction": 2,
                   "shifters": [
                     {
                       "type": 0,
                       "width": 249,
-                      "height": 338,
+                      "height": 388,
                       "currentContent": "Modules",
                       "tabs": [
                         {
@@ -502,7 +502,7 @@
                     {
                       "type": 0,
                       "width": 249,
-                      "height": 310,
+                      "height": 360,
                       "currentContent": "Custom Variables",
                       "tabs": [
                         {
@@ -515,7 +515,7 @@
                 {
                   "type": 0,
                   "width": 755,
-                  "height": 654,
+                  "height": 754,
                   "currentContent": "State Machine",
                   "tabs": [
                     {
@@ -532,7 +532,7 @@
                 {
                   "type": 0,
                   "width": 496,
-                  "height": 654,
+                  "height": 754,
                   "currentContent": "Inspector",
                   "tabs": [
                     {
@@ -545,13 +545,13 @@
             {
               "type": 1,
               "width": 1512,
-              "height": 261,
+              "height": 53,
               "direction": 1,
               "shifters": [
                 {
                   "type": 0,
-                  "width": 244,
-                  "height": 261,
+                  "width": 502,
+                  "height": 53,
                   "currentContent": "Sequences",
                   "tabs": [
                     {
@@ -561,8 +561,8 @@
                 },
                 {
                   "type": 0,
-                  "width": 970,
-                  "height": 261,
+                  "width": 848,
+                  "height": 53,
                   "currentContent": "Sequence Editor",
                   "tabs": [
                     {
@@ -572,8 +572,8 @@
                 },
                 {
                   "type": 0,
-                  "width": 286,
-                  "height": 261,
+                  "width": 150,
+                  "height": 53,
                   "currentContent": "Logger",
                   "tabs": [
                     {
@@ -7276,8 +7276,8 @@
       }
     ],
     "viewOffset": [
-      166,
-      -112
+      111,
+      -55
     ],
     "viewZoom": 1.0,
     "transitions": {
@@ -7291,8 +7291,8 @@
     "comments": {
       "hideInEditor": true,
       "viewOffset": [
-        166,
-        -112
+        111,
+        -55
       ],
       "viewZoom": 1.0
     }
