@@ -39,7 +39,7 @@ On clique sur le bouton ➕ vert dans la partie `Sequence Editor` pour créer un
 On peux choisir le type d'automation :
 - `Trigger` déclenchera des évenements sans transition, en envoyant une valeur à un moment donné de la timeline. Ça sert par exemple à éteindre tous les lights d'un coup.
 - `Mapping` permet de modifier une valeur suivant une courbe. Ça sert par exemple à faire tourner lentement une lyre ou baisser progressivement la luminosité.
-- `Mapping 2D` est comme Mapping, mais en 2D permet de modifier une valeur suivant un chemin 2D. Plus d'infos [ici](https://bkuperberg.gitbook.io/chataigne-docs/v/fr/the-time-machine-sequences/mapping-2d-layer).
+- `Mapping 2D` est comme Mapping, mais en 2D permet de modifier une valeur suivant un chemin 2D. Plus d'infos [ici](https://benkuper.notion.site/Mapping-Layer-4eeb78cae8174bf2a0d400bb936550b0).
 - `Audio` permet de synchroniser une piste son à la séquence, mais nécessite une carte son. Ça sert par exemple à avoir des sons qui se jouent en même temps que les animations.
 - `Color` permet de faire évoluer une couleur dans le temps. Ça sert par exemple à créer des transitions de couleurs des lyres.
 - `Sequences` permet de faire jouer plusieurs séquences en même temps ou sur la même timeline. Ça sert par exemple à créer plusieurs séquences d'animations de paramètres puis à les assembler dans le temps.
@@ -203,7 +203,7 @@ On assigne la plage d'entrée allant de 0 à 127 et la plage de sortie allant de
 
 ## Pour aller + loin
 
-- La [documentation officielle de Chataigne](https://bkuperberg.gitbook.io/chataigne-docs/v/fr/)
+- La [documentation officielle de Chataigne](https://benkuper.notion.site/The-Amazing-Chataigne-Documentation-079bd5a0b7e648bbbfe34c3c869a3985)
 
 - Le [tuto introduction à Chataigne](https://github.com/LucieMrc/Chataigne_2spi) (🚧 en travaux 🚧).
 

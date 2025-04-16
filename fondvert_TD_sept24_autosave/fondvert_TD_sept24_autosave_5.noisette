@@ -624,12 +624,6 @@
           ],
           "containers": {
             "dmxPro": {
-              "parameters": [
-                {
-                  "value": "ENTTEC DMX USB PRO(SN : EN275390)",
-                  "controlAddress": "/port"
-                }
-              ],
               "containers": {
                 "input": {
                   "parameters": [
@@ -672,12 +666,6 @@
           "viewZoom": 1.0
         },
         "device": {
-          "parameters": [
-            {
-              "value": "ENTTEC DMX USB PRO(SN : EN275390)",
-              "controlAddress": "/port"
-            }
-          ],
           "containers": {
             "input": {
               "parameters": [
@@ -989,7 +977,7 @@
             {
               "parameters": [
                 {
-                  "value": 100.0,
+                  "value": 270.9000244140625,
                   "controlAddress": "/dimmer",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1008,9 +996,9 @@
               "parameters": [
                 {
                   "value": [
+                    0.4039215743541718,
+                    0.5490196347236633,
                     1.0,
-                    0.7725333571434021,
-                    0.0,
                     1.0
                   ],
                   "controlAddress": "/color",
@@ -1030,7 +1018,7 @@
             {
               "parameters": [
                 {
-                  "value": 1.0,
+                  "value": 0.4039215743541718,
                   "controlAddress": "/red",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1048,7 +1036,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.7725333571434021,
+                  "value": 0.5490196347236633,
                   "controlAddress": "/green",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1066,7 +1054,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.0,
+                  "value": 1.0,
                   "controlAddress": "/blue",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1084,7 +1072,7 @@
             {
               "parameters": [
                 {
-                  "value": 182.5,
+                  "value": 239.3999938964844,
                   "controlAddress": "/white",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1102,7 +1090,6 @@
             {
               "parameters": [
                 {
-                  "value": 0.0,
                   "controlAddress": "/zoom",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1120,7 +1107,7 @@
             {
               "parameters": [
                 {
-                  "value": 115.831657409668,
+                  "value": 153.3316802978516,
                   "controlAddress": "/pan",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1138,7 +1125,7 @@
             {
               "parameters": [
                 {
-                  "value": 179.1627044677734,
+                  "value": 159.8626861572266,
                   "controlAddress": "/tilt",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1296,7 +1283,7 @@
             {
               "parameters": [
                 {
-                  "value": 100.0,
+                  "value": 240.6000061035156,
                   "controlAddress": "/dimmer",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1315,9 +1302,9 @@
               "parameters": [
                 {
                   "value": [
-                    1.0,
-                    0.772549033164978,
-                    0.0,
+                    0.9764705896377563,
+                    0.3530316948890686,
+                    0.3530316948890686,
                     1.0
                   ],
                   "controlAddress": "/color",
@@ -1337,7 +1324,7 @@
             {
               "parameters": [
                 {
-                  "value": 1.0,
+                  "value": 0.9764705896377563,
                   "controlAddress": "/red",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1355,7 +1342,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.772549033164978,
+                  "value": 0.3530316948890686,
                   "controlAddress": "/green",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1373,7 +1360,7 @@
             {
               "parameters": [
                 {
-                  "value": 0.0,
+                  "value": 0.3530316948890686,
                   "controlAddress": "/blue",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1391,7 +1378,7 @@
             {
               "parameters": [
                 {
-                  "value": 182.0,
+                  "value": 265.7999877929688,
                   "controlAddress": "/white",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1409,7 +1396,6 @@
             {
               "parameters": [
                 {
-                  "value": 0.0,
                   "controlAddress": "/zoom",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1427,7 +1413,7 @@
             {
               "parameters": [
                 {
-                  "value": 201.9189758300781,
+                  "value": 197.3189697265625,
                   "controlAddress": "/pan",
                   "feedbackOnly": false,
                   "type": "Float",
@@ -1445,7 +1431,7 @@
             {
               "parameters": [
                 {
-                  "value": 177.6189880371094,
+                  "value": 166.6189727783203,
                   "controlAddress": "/tilt",
                   "feedbackOnly": false,
                   "type": "Float",
